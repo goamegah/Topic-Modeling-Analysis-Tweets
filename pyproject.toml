@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "tmo"
+version = "0.1.0"
+description = "Analyses avancées des Tweets - Topics Analysis"
+authors = ["godwin amegah <winneramegah492@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "./tweemo"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+pandas = "^2.0.0"
+nltk = "^3.8.1"
+spacy = "^3.5.2"
+jupyter = "^1.0.0"
+matplotlib = "^3.7.1"
+emoji = "^2.2.0"
+tweet-preprocessor = "^0.6.0"
+scikit-learn = "^1.2.2"
+tweepy = "^4.13.0"
+psycopg2 = "^2.9.6"
+gensim = "^4.3.1"
+torch = "^2.0.0"
+pypi = "^2.1"
+llvmlite = "^0.39.1"
+numpy = ">=1.18,<1.24"
+dash = "^2.9.3"
+sqlalchemy = "^2.0.11"
+dash-bootstrap-components = "^1.4.1"
+wordcloud = "^1.9.1.1"
+redis = "^4.5.4"
+iris = "^1.0.7"
+celery = "^5.2.7"
+flask-caching = "^2.0.2"
+dash-table = "^5.0.0"
+umap = "^0.1.1"
+torchvision = "^0.15.2"
+umap-learn = "^0.5.3"
+torchaudio = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

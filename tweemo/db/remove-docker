@@ -1,0 +1,25 @@
+Arrêtez et supprimez tous les conteneurs Docker en cours d'exécution sur votre système avec la commande suivante :
+
+css
+
+sudo docker stop $(sudo docker ps -a -q)
+sudo docker rm $(sudo docker ps -a -q)
+
+Supprimez l'installation de Docker avec la commande suivante :
+
+arduino
+
+sudo apt-get purge docker-ce docker-ce-cli containerd.io
+
+Supprimez les fichiers de configuration Docker, les images et les volumes en exécutant la commande suivante :
+
+bash
+
+sudo rm -rf /var/lib/docker
+
+Supprimez le groupe docker et les fichiers de configuration restants en exécutant la commande suivante :
+
+bash
+
+sudo groupdel docker
+sudo rm -rf /etc/docker
